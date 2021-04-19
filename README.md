@@ -1,26 +1,3 @@
-## Tabla de Contenido
-- [¿Qué es PostCSS?](#qué-es-postcss)
-- [Plugins](#plugins)
-  - [autoprefixer](#autoprefixer)
-  - [cssnext](#cssnext)
-  - [postcss-import](#postcss-import)
-  - [fontmagician](#fontmagician)
-  - [stylelint](#stylelint)
-  - [mqpacker](#mqpacker)
-  - [cssnano](#cssnano)
-- [Configuración](#configuración)
-- [Los nuevos módulos de CSS](#los-nuevos-módulos-de-css)
-  - [Variables](#variables)
-  - [Cálculos](#cálculos)
-  - [Media queries](#media-queries)
-  - [Imágenes retina](#imágenes-retina)
-  - [Colores](#colores)
-  - [Fuentes](#fuentes)
-  - [Selectores personalizados](#selectores-personalizados)
-  - [Pseudo clases](#pseudo-clases)
-  - [Indentado](#indentado)
-- [Enlaces de Interés](#enlaces-de-interés)
-
 ## ¿Qué es PostCSS?
 
 Es una herramienta para manipular archivos CSS usando JavaScript.
@@ -42,10 +19,6 @@ postcss "src/css/home.css" -o "dist/css/home.css" -w
 * `-w` (-watch), está pendiente a los cambios en el archivo postcss y los cambia automáticamente.
 * `-u` (-use), indica qué plugins se van a usar
 
-<div align="right">
-  <small><a href="#tabla-de-contenido">🡡 volver al inicio</a></small>
-</div>
-
 ## Plugins
 
 [Plugins de Postcss](www.postcss.parts)
@@ -58,10 +31,6 @@ plugin mas usado en postcss. Usado para agregar prefijos para algunas reglas de 
 $ npm install autoprefixer --save-dev 
 ```
 
-<div align="right">
-  <small><a href="#tabla-de-contenido">🡡 volver al inicio</a></small>
-</div>
-
 ### cssnext
 
 Es un plugin que contiene muchos plugins para aumentar la funcionalidad de postcss
@@ -69,10 +38,6 @@ Es un plugin que contiene muchos plugins para aumentar la funcionalidad de postc
 ```bash
 $ npm install postcss-cssnext --save-dev
 ```
-
-<div align="right">
-  <small><a href="#tabla-de-contenido">🡡 volver al inicio</a></small>
-</div>
 
 ### postcss-import
 
@@ -87,10 +52,6 @@ En el .css principal:
 ```js
 @import "./sidebar.css";
 ```
-
-<div align="right">
-  <small><a href="#tabla-de-contenido">🡡 volver al inicio</a></small>
-</div>
 
 ### fontmagician
 
@@ -113,10 +74,6 @@ require("postcss-font-magician")({
 })
 ```
 
-<div align="right">
-  <small><a href="#tabla-de-contenido">🡡 volver al inicio</a></small>
-</div>
-
 ### stylelint
 
 Se configura un archivo con reglas las cuales debe de segur el archivo.css. En caso no se cumpla con las reglas definidas la consola bota error al traspilar el postcss.
@@ -136,10 +93,6 @@ module.exports = {
 }
 ```
 
-<div align="right">
-  <small><a href="#tabla-de-contenido">🡡 volver al inicio</a></small>
-</div>
-
 ### mqpacker
 
 Toma los media queries y los junta en un solo paquete.
@@ -148,10 +101,6 @@ Toma los media queries y los junta en un solo paquete.
 $ npm install css-mqpacker --save-dev
 ```
 
-<div align="right">
-  <small><a href="#tabla-de-contenido">🡡 volver al inicio</a></small>
-</div>
-
 ### cssnano
 
 minimiza el código css
@@ -159,10 +108,6 @@ minimiza el código css
 ```bash
 $ npm install cssnano --save-dev
 ```
-
-<div align="right">
-  <small><a href="#tabla-de-contenido">🡡 volver al inicio</a></small>
-</div>
 
 ## Configuración
 
@@ -177,10 +122,6 @@ module.exports = {
   ] 
 }
 ```
-
-<div align="right">
-  <small><a href="#tabla-de-contenido">🡡 volver al inicio</a></small>
-</div>
 
 ## Los nuevos módulos de CSS
 
@@ -261,10 +202,6 @@ El conjunto de todo esto nos da un mejor CSS, uno que día a día se irá agrega
 
 Ahora que sabes que es una buena idea escribir código que en un futuro será el estándar continúa con el curso que espero te deje impresionado clase a clase.
 
-<div align="right">
-  <small><a href="#tabla-de-contenido">🡡 volver al inicio</a></small>
-</div>
-
 ### Variables
 
 Las variables van dentro de un atributo `:root {}`.
@@ -296,19 +233,11 @@ Las variables van dentro de un atributo `:root {}`.
 }
 ```
 
-<div align="right">
-  <small><a href="#tabla-de-contenido">🡡 volver al inicio</a></small>
-</div>
-
 ### Cálculos
 
 ```css
 width: calc(100%- 50px);
 ```
-
-<div align="right">
-  <small><a href="#tabla-de-contenido">🡡 volver al inicio</a></small>
-</div>
 
 ### Media queries
 
@@ -322,10 +251,6 @@ width: calc(100%- 50px);
 }
 ```
 
-<div align="right">
-  <small><a href="#tabla-de-contenido">🡡 volver al inicio</a></small>
-</div>
-
 ### Imágenes retina
 
 ```css
@@ -333,10 +258,6 @@ background-image: image-set(url("/src/images/platzi-video.png") 1x,
                             url("/src/images/platzi-video-2x.png") 2x,
                             url("/src/images/platzi-video-3x.png") 300dpi);
 ```
-
-<div align="right">
-  <small><a href="#tabla-de-contenido">🡡 volver al inicio</a></small>
-</div>
 
 ### Colores
 
@@ -349,10 +270,6 @@ background: hwb(240, 35%, 0%, 1);
 background: gray(50); //0-255
 ```
 
-<div align="right">
-  <small><a href="#tabla-de-contenido">🡡 volver al inicio</a></small>
-</div>
-
 ### Fuentes
 
 Toma la fuente por defecto del sistema operativo.
@@ -360,10 +277,6 @@ Toma la fuente por defecto del sistema operativo.
 ```css
 font-family: system-ui;
 ```
-
-<div align="right">
-  <small><a href="#tabla-de-contenido">🡡 volver al inicio</a></small>
-</div>
 
 ### Selectores personalizados
 
@@ -382,10 +295,6 @@ font-family: system-ui;
     color: white;
 }
 ```
-
-<div align="right">
-  <small><a href="#tabla-de-contenido">🡡 volver al inicio</a></small>
-</div>
 
 ### Pseudo clases
 
@@ -412,10 +321,6 @@ font-family: system-ui;
   background: blue;
 }
 ```
-
-<div align="right">
-  <small><a href="#tabla-de-contenido">🡡 volver al inicio</a></small>
-</div>
 
 ### Indentado
 
@@ -466,14 +371,6 @@ Se transforma en esto:
 }
 ```
 
-<div align="right">
-  <small><a href="#tabla-de-contenido">🡡 volver al inicio</a></small>
-</div>
-
 ## Enlaces de Interés
 * [Postcss Cli](https://github.com/postcss/postcss-cli)
 * [Plugins](www.postcss.parts)
-  
-<div align="right">
-  <small><a href="#tabla-de-contenido">🡡 volver al inicio</a></small>
-</div>
